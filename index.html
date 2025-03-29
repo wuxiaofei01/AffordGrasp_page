@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <!-- Meta tags for social media banners, these should be filled in appropriatly as they are your "business card" -->
+  <!-- Replace the content tag with appropriate information -->
+  <meta name="description" content="DESCRIPTION META TAG">
+  <meta property="og:title" content="SOCIAL MEDIA TITLE TAG"/>
+  <meta property="og:description" content="SOCIAL MEDIA DESCRIPTION TAG TAG"/>
+  <meta property="og:url" content="URL OF THE WEBSITE"/>
+  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X630-->
+  <meta property="og:image" content="static/image/your_banner_image.png" />
+  <meta property="og:image:width" content="1200"/>
+  <meta property="og:image:height" content="630"/>
+
+
+  <meta name="twitter:title" content="TWITTER BANNER TITLE META TAG">
+  <meta name="twitter:description" content="TWITTER BANNER DESCRIPTION META TAG">
+  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X600-->
+  <meta name="twitter:image" content="static/images/your_twitter_banner_image.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <!-- Keywords for your paper to be indexed by-->
+  <meta name="keywords" content="KEYWORDS SHOULD BE PLACED HERE">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+  <title>AffordGrasp</title>
+  <link rel="icon" type="image/x-icon" href="static/images/favicon.ico">
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+  rel="stylesheet">
+
+  <link rel="stylesheet" href="static/css/bulma.min.css">
+  <link rel="stylesheet" href="static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="static/css/fontawesome.all.min.css">
+  <link rel="stylesheet"
+  href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="static/css/index.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
+  <script defer src="static/js/fontawesome.all.min.js"></script>
+  <script src="static/js/bulma-carousel.min.js"></script>
+  <script src="static/js/bulma-slider.min.js"></script>
+  <script src="static/js/index.js"></script>
+</head>
+<body>
+
+
+  <section class="hero">
+    <div class="hero-body">
+      <div class="container is-max-desktop">
+        <div class="columns is-centered">
+          <div class="column has-text-centered">
+            <h1 class="title is-1 publication-title">AffordGrasp: Cross-Modal Diffusion for Affordance-Aware Grasp Synthesis</h1>
+            <div class="is-size-5 publication-authors">
+              <!-- Paper authors -->
+               
+              <span class="author-block">
+                <a href="https://wuxiaofei01.github.io/" target="_blank"> Xiaofei Wu</a><sup>1</sup>,
+              </span>
+              <span class="author-block">
+                <a href="https://lym29.github.io/" target="_blank"> Yumeng Liu</a><sup>2</sup>,
+              </span>
+              <span class="author-block">
+                <a href="https://yujiaoshi.github.io/"> Yujiao Shi</a><sup>1</sup>,
+              </span>
+              <span class="author-block">
+                <a href="https://yuexinma.me/"> Yuexin Ma</a><sup>1</sup>,
+              </span>
+              <span class="author-block">
+                <a href="https://xmhe.bitbucket.io/"> Xuming He</a><sup>1,&dagger;</sup>,
+              </span>
+            </div>
+
+            <div class="is-size-5 publication-authors">
+              <span class="author-block">
+                <sup>1</sup>ShanghaiTech University,
+                <sup>2</sup>The University of Hong Kong,
+                <br>
+                <sup>&dagger;</sup>Corresponding author
+            </div>
+
+            <div class="column has-text-centered">
+              <div class="publication-links">
+                    <!-- Arxiv PDF link -->
+                <span class="link-block">
+                  <a href="static/pdfs/main.pdf" target="_blank" class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="fas fa-file-pdf"></i>
+                    </span>
+                    <span>Paper</span>
+                  </a>
+                </span>
+
+                    <!-- Supplementary PDF link -->
+                <span class="link-block">
+                  <a href="static/pdfs/supp.pdf" target="_blank" class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="fas fa-file-pdf"></i>
+                    </span>
+                    <span>Supplementary</span>
+                  </a>
+                </span>
+
+                <!-- Github link -->
+                <span class="link-block">
+                  <a href="" target="_blank" class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="fab fa-github"></i>
+                    </span>
+                    <span>Code</span>
+                  </a>
+                </span>
+
+                <!-- Dataset link -->
+                <span class="link-block">
+                  <a href="" target="_blank" class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="fab fa-google-drive"></i>
+                    </span>
+                    <span>Dataset</span>
+                  </a>
+                </span>
+
+                <!-- ArXiv abstract Link -->
+                <span class="link-block">
+                  <a href="" target="_blank"
+                  class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                    <i class="ai ai-arxiv"></i>
+                  </span>
+                  <span>arXiv</span>
+                </a>
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- Teaser video-->
+<!-- 
+<section class="hero teaser">
+  <div class="container is-max-desktop">
+    <div class="hero-body">
+      <video poster="" id="tree" autoplay controls muted loop height="100%">
+        <source src="static/videos/banner_video.mp4"
+        type="video/mp4">
+      </video>
+      <h2 class="subtitle has-text-centered">
+        Aliquam vitae elit ullamcorper tellus egestas pellentesque. Ut lacus tellus, maximus vel lectus at, placerat pretium mi. Maecenas dignissim tincidunt vestibulum. Sed consequat hendrerit nisl ut maximus. 
+      </h2>
+    </div>
+  </div>
+</section> 
+-->
+<!-- End teaser video -->
+
+<!-- Paper abstract -->
+<section class="section hero is-light">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Abstract</h2>
+        <div class="content has-text-justified">
+          <p>
+            Accurately modeling human hand-object interactions remains challenging due to the complexity of aligning instructions with geometric features in applications. Previous approaches often leverage 3D geometric features and textual instructions to directly capture hand-object relationships. However, inherent modality gaps and the difficulty of learning fine-grained geometric constraints and instruction-semantic relationships, such strategies often result in suboptimal hand pose. To address this limitation, this work introduces a novel diffusion-based approach for generating grasping poses that adhere to both physical constraints and instruction semantics. In particular, we develop a latent diffusion model augmented with an object affordance module and a distribution adjustment module, conditioned on both objects and instructions. This enhancement improves the model’s ability to capture fine-grained semantic instructions and geometric features effectively. Extensive experiments demonstrate that our method outperforms state-of-the-art approaches in instruction semantic consistency, diversity, and pose quality.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End paper abstract -->
+
+
+<!-- Image carousel -->
+<section class="hero is-small">
+  <div class="hero-body">
+    <div class="container">
+      <div id="results-carousel" class="carousel results-carousel">
+      <div class="item">
+        <!--Your image here -->
+        <img src="static/images/teaser.png" alt="MY ALT TEXT"/>
+        <h2 class="subtitle has-text-centered">
+          AffordGrasp enables realistic dexterous hand grasping synchronized with textual instructions, with each grasp pair visualized from two distinct viewpoints to emphasize spatial details. For each object, three selected instructions guide the generation of diverse grasps.
+        </h2>
+      </div>
+      
+      <div class="item">
+        <img src="static/images/frame.png" alt="MY ALT TEXT"/>
+        <h2 class="subtitle has-text-centered">
+          We use language and object point clouds to generate object affordance...
+        </h2>
+      </div>
+
+      <div class="item">
+        <img src="static/images/dam.png" alt="MY ALT TEXT" style="display: block; margin: 0 auto; max-width: 100%; height: auto;"/>
+        <h2 class="subtitle has-text-centered">
+          Distribution Adjustment Module (DAM) Architecture.
+        </h2>
+      </div>
+
+      <div class="item">
+        <img src="static/images/annotater.png" alt="MY ALT TEXT" style="display: block; margin: 0 auto; max-width: 100%; height: auto;"/>
+        <h2 class="subtitle has-text-centered">
+          Implement an automated self-training pipeline that first assigns pseudo-labels to unlabeled data, then iteratively optimizes the model using these refined annotations.
+        </h2>
+      </div>
+    </div>
+</div>
+</div>
+</section>
+<!-- End image carousel -->
+
+
+
+
+<!-- End youtube video -->
+
+
+
+<!-- Video carousel -->
+<section class="hero is-small">
+  <div class="hero-body">
+    <div class="container is-max-desktop">
+      <h2 class="title is-3 has-text-centered mb-6">Video Results</h2>
+      
+      <!-- 第一行视频 -->
+      <div class="columns is-centered">
+        <!-- 视频1 -->
+        <div class="column is-6">
+          <div class="video-container" style="position: relative; padding-bottom: 100%; margin-bottom: 20px;">
+            <video id="video1" autoplay controls muted loop style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;">
+              <source src="static/videos/1.mp4" type="video/mp4">
+            </video>
+          </div>
+          <h3 class="subtitle has-text-centered is-6">Wrap your fingers around the bottle's body</h3>
+        </div>
+        
+        <!-- 视频2 -->
+        <div class="column is-6">
+          <div class="video-container" style="position: relative; padding-bottom: 100%; margin-bottom: 20px;">
+            <video id="video2" autoplay controls muted loop style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;">
+              <source src="static/videos/2.mp4" type="video/mp4">
+            </video>
+          </div>
+          <h3 class="subtitle has-text-centered is-6">Carefully lift the bottle to avoid slide.</h3>
+        </div>
+      </div>
+
+      <!-- 第二行视频 -->
+      <div class="columns is-centered">
+        <!-- 视频3 -->
+        <div class="column is-6">
+          <div class="video-container" style="position: relative; padding-bottom: 100%; margin-bottom: 20px;">
+            <video id="video3" autoplay controls muted loop style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;">
+              <source src="static/videos/3.mp4" type="video/mp4">
+            </video>
+          </div>
+          <h3 class="subtitle has-text-centered is-6">Press the dispenser to avoid over-pouring.</h3>
+        </div>
+        
+        <!-- 视频4 -->
+        <div class="column is-6">
+          <div class="video-container" style="position: relative; padding-bottom: 100%; margin-bottom: 20px;">
+            <video id="video4" autoplay controls muted loop style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;">
+              <source src="static/videos/4.mp4" type="video/mp4">
+            </video>
+          </div>
+          <h3 class="subtitle has-text-centered is-6">Twist the top of the dispenser to open it.</h3>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End video carousel -->
+
+
+
+
+
+
+<!-- Paper poster -->
+<!-- 
+<section class="hero is-small is-light">
+  <div class="hero-body">
+    <div class="container">
+      <h2 class="title">Poster</h2>
+
+      <iframe  src="static/pdfs/sample.pdf" width="100%" height="550">
+          </iframe>
+        
+      </div>
+    </div>
+  </section> 
+-->
+<!--End paper poster -->
+
+
+<!--BibTex citation -->
+  <!-- <section class="section" id="BibTeX">
+    <div class="container is-max-desktop content">
+      <h2 class="title">BibTeX</h2>
+      <pre><code>
+        @article{liu2024realdex,
+          title={Realdex: Towards human-like grasping for robotic dexterous hand},
+          author={Liu, Yumeng and Yang, Yaxun and Wang, Youzhuo and Wu, Xiaofei and Wang, Jiamin and Yao, Yichen and Schwertfeger, S{\"o}ren and Yang, Sibei and Wang, Wenping and Yu, Jingyi and others},
+          journal={arXiv preprint arXiv:2402.13853},
+          year={2024}
+        }
+        
+      </code></pre>
+    </div>
+</section> -->
+<!--End BibTex citation -->
+
+
+  <footer class="footer">
+  <div class="container">
+    <div class="columns is-centered">
+      <div class="column is-8">
+        <div class="content">
+          <p><strong>Acknowledgement:</strong> This work was supported by NSFC (No.62206173), MoE Key
+            Laboratory of Intelligent Perception and Human-Machine
+            Collaboration (ShanghaiTech University), Shanghai Frontiers Science Center of Human-centered Artificial Intelligence (ShangHAI), Shanghai Engineering Research Center
+            of Intelligent Vision and Imaging. 
+          </p>
+
+          <p>
+            This page was built using the <a href="https://github.com/eliahuhorwitz/Academic-project-page-template" target="_blank">Academic Project Page Template</a> which was adopted from the <a href="https://nerfies.github.io" target="_blank">Nerfies</a> project page.
+            This website is licensed under a <a rel="license"  href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank">Creative
+            Commons Attribution-ShareAlike 4.0 International License</a>.
+          </p>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- Statcounter tracking code -->
+  
+<!-- You can add a tracker to track page visits by creating an account at statcounter.com -->
+
+    <!-- End of Statcounter Code -->
+
+  </body>
+  </html>
